@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import com.yuze.demo.f策略and工厂and注解and利用SpringIOC.策略工厂.HandlerFactory;
 import com.yuze.demo.f策略and工厂and注解and利用SpringIOC.策略类.IOrderHandler;
 import com.yuze.demo.f策略and工厂and注解and利用SpringIOC.策略类注解.HandlerType;
+import com.yuze.demo.f策略and工厂and注解and利用SpringIOC.类扫描工具类.ClassScanner;
 import java.util.Map;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
@@ -30,7 +31,7 @@ public class HandlerProcessor implements BeanFactoryPostProcessor {
   public void postProcessBeanFactory(
       ConfigurableListableBeanFactory configurableListableBeanFactory) throws BeansException {
     Map<String,  Class<IOrderHandler>> handlerMap = Maps.newHashMapWithExpectedSize(3);
-    com.yuze.demo.f策略and工厂and注解.ClassScanner.scan(HANDLER_PACAKGE, HandlerType.class).forEach(clazz->{
+    ClassScanner.scan(HANDLER_PACAKGE, HandlerType.class).forEach(clazz->{
       String type = ((HandlerType) clazz.getAnnotation(HandlerType.class)).value();
       handlerMap.put(type, clazz);
       
