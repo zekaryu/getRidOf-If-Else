@@ -2,6 +2,8 @@ package com.yuze.demo.d策略and工厂;
 
 import com.yuze.demo.IOrderService;
 import com.yuze.demo.OrderDTO;
+import com.yuze.demo.e策略and工厂and反射.策略工厂.HandlerFactory;
+import com.yuze.demo.e策略and工厂and反射.策略类.IOrderHandler;
 
 /**
  * ClassName: OrderServiceImpl3.
@@ -17,7 +19,7 @@ public class OrderServiceImpl3 implements IOrderService {
 
   
   @Override
-  public String handle(OrderDTO orderDTO) {
+  public String handle(OrderDTO orderDTO) throws Exception {
     IOrderHandler orderHandler = HandlerFactory.getHandler(orderDTO);
     assert orderHandler != null;
     return orderHandler.handler(orderDTO);

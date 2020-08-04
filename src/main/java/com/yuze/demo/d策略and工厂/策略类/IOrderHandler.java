@@ -1,4 +1,4 @@
-package com.yuze.demo.d策略and工厂;
+package com.yuze.demo.d策略and工厂.策略类;
 
 import com.yuze.demo.OrderDTO;
 

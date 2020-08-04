@@ -1,6 +1,8 @@
-package com.yuze.demo.e策略and工厂and反射;
+package com.yuze.demo.e策略and工厂and反射.策略工厂;
 
 import com.yuze.demo.OrderDTO;
+import com.yuze.demo.e策略and工厂and反射.HandlerTypeEnum;
+import com.yuze.demo.e策略and工厂and反射.策略类.IOrderHandler;
 
 /**
  * ClassName: HandlerFactory.

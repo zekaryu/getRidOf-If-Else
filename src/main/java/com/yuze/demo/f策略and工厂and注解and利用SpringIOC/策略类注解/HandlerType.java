@@ -1,4 +1,4 @@
-package com.yuze.demo.f策略and工厂and注解;
+package com.yuze.demo.f策略and工厂and注解and利用SpringIOC.策略类注解;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

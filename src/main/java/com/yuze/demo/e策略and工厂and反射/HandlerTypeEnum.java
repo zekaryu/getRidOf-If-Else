@@ -1,6 +1,10 @@
 package com.yuze.demo.e策略and工厂and反射;
 
 
+import com.yuze.demo.e策略and工厂and反射.策略类.MemberUserHandler;
+import com.yuze.demo.e策略and工厂and反射.策略类.OrdinaryUserHandler;
+import com.yuze.demo.e策略and工厂and反射.策略类.VipMemberHandler;
+
 /**
  * ClassName: HandlerType.
  * Function: TODO 功能描述.

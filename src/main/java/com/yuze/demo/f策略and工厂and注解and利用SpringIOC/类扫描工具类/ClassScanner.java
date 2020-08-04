@@ -1,4 +1,4 @@
-package com.yuze.demo.f策略and工厂and注解;
+package com.yuze.demo.f策略and工厂and注解and利用SpringIOC.类扫描工具类;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;

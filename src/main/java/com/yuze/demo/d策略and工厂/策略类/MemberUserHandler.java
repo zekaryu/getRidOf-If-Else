@@ -1,6 +1,7 @@
-package com.yuze.demo.d策略and工厂;
+package com.yuze.demo.d策略and工厂.策略类;
 
 import com.yuze.demo.OrderDTO;
+import com.yuze.demo.e策略and工厂and反射.策略类.IOrderHandler;
 
 /**
  * ClassName: MemberUserHandler.

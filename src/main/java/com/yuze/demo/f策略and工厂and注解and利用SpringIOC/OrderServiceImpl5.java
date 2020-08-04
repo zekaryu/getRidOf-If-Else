@@ -1,7 +1,8 @@
-package com.yuze.demo.f策略and工厂and注解;
+package com.yuze.demo.f策略and工厂and注解and利用SpringIOC;
 
 import com.yuze.demo.IOrderService;
 import com.yuze.demo.OrderDTO;
+import com.yuze.demo.f策略and工厂and注解and利用SpringIOC.策略工厂.HandlerFactory;
 import java.math.BigDecimal;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -18,7 +19,7 @@ import org.springframework.stereotype.Service;
  * @since JDK 1.8
  */
 @Service
-public class OrderServiceImpl3 implements IOrderService {
+public class OrderServiceImpl5 implements IOrderService {
 
   @Resource
   private HandlerFactory handlerFactory;
